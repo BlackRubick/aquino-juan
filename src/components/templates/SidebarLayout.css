@@ -1,0 +1,26 @@
+.sidebar-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-layout__content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-5);
+  padding: var(--space-6);
+}
+
+.sidebar-layout__sidebar {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+
+.sidebar-layout__main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}

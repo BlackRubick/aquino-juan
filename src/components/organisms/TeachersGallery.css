@@ -1,0 +1,23 @@
+.teachers-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-5);
+}
+
+@media (min-width: 640px) {
+  .teachers-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .teachers-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .teachers-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

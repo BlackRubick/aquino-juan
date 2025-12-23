@@ -1,0 +1,69 @@
+.teacher-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.teacher-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.teacher-card__image-wrapper {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(30,58,95,0.1), rgba(44,122,123,0.1));
+}
+
+.teacher-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.teacher-card:hover .teacher-card__image {
+  transform: scale(1.05);
+}
+
+.teacher-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  flex-grow: 1;
+}
+
+.teacher-card__name {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.teacher-card__specialty {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.teacher-card__badge {
+  display: inline-block;
+  background: rgba(44,122,123,0.1);
+  color: var(--color-accent);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-top: var(--space-1);
+  width: fit-content;
+}
+
+.teacher-card__btn {
+  margin: 0 var(--space-4) var(--space-4);
+  width: calc(100% - var(--space-8));
+}

@@ -1,0 +1,104 @@
+.historia {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+.historia__section { display: flex; flex-direction: column; gap: var(--space-4); }
+
+/* Intro */
+.historia__intro { background: #fff; border-radius: var(--radius-lg); padding: var(--space-6); box-shadow: var(--shadow-sm); }
+.historia__intro p { font-size: 1.05rem; line-height: 1.7; }
+
+.historia__timeline {
+  position: relative;
+  margin: var(--space-6) 0;
+  display: grid;
+  gap: var(--space-6);
+}
+
+.historia__timeline::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  border-radius: 2px;
+}
+
+.historia__item {
+  position: relative;
+  padding-left: 48px;
+}
+
+.historia__point {
+  position: absolute;
+  left: 3px;
+  top: 12px;
+  width: 18px;
+  height: 18px;
+  background: var(--color-primary);
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(30,58,95,0.15);
+  z-index: 2;
+}
+
+.historia__content {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.historia__content:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+.historia__img { width: 100%; height: 220px; object-fit: cover; }
+.historia__text { padding: var(--space-5); }
+
+/* Decades */
+.historia__decades { display: grid; grid-template-columns: 1fr; gap: var(--space-4); }
+.decade-card { background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); padding: var(--space-5); }
+.decade-card__period { display: inline-block; background: rgba(44,122,123,0.1); color: var(--color-accent); padding: 4px 12px; border-radius: 999px; font-weight: 600; font-size: 0.9rem; margin-bottom: var(--space-2); }
+.decade-card h3 { font-family: var(--font-family-heading); color: var(--color-primary); margin-bottom: var(--space-3); }
+.decade-card__stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); margin-top: var(--space-3); }
+.decade-card__stats div { text-align: center; }
+.decade-card__stats strong { display: block; font-size: 1.5rem; color: var(--color-primary); font-family: var(--font-family-heading); }
+
+/* Achievements */
+.historia__achievements { display: grid; gap: var(--space-4); }
+.achievement-item { background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); padding: var(--space-5); display: flex; gap: var(--space-4); align-items: start; }
+.achievement-item__icon { color: var(--color-secondary); min-width: 48px; }
+.achievement-item h4 { font-family: var(--font-family-heading); color: var(--color-primary); margin-bottom: 4px; }
+.achievement-item p { color: var(--color-muted); font-size: 0.95rem; }
+
+/* Legacy */
+.historia__legacy { background: linear-gradient(135deg, rgba(30,58,95,0.06), rgba(44,122,123,0.06)); border-radius: var(--radius-lg); padding: var(--space-6); text-align: center; }
+.historia__legacy p { font-size: 1.05rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+.historia__legacy-actions { display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap; margin-top: var(--space-5); }
+
+/* Reveal */
+.reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+.reveal--visible { opacity: 1; transform: none; }
+
+@media (min-width: 640px) {
+  .historia__decades { grid-template-columns: repeat(2, 1fr); }
+  .historia__achievements { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 768px) {
+  .historia__timeline { gap: var(--space-8); }
+  .historia__timeline::before { left: 50%; transform: translateX(-1.5px); }
+  .historia__item { padding-left: 0; }
+  .historia__item.left { grid-column: 1 / span 1; padding-right: 56px; }
+  .historia__item.right { grid-column: 2 / span 1; padding-left: 56px; }
+  .historia__timeline { grid-template-columns: 1fr 1fr; }
+  .historia__point { left: calc(50% - 9px); }
+}
+
+@media (min-width: 1024px) {
+  .historia__decades { grid-template-columns: repeat(4, 1fr); }
+}

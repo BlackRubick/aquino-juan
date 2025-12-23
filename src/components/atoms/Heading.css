@@ -1,0 +1,13 @@
+.heading {
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  font-family: var(--font-family-heading);
+}
+
+.heading-1 { font-size: 2.4rem; }
+.heading-2 { font-size: 2rem; }
+.heading-3 { font-size: 1.6rem; }
+.heading-4 { font-size: 1.3rem; }
+.heading-5 { font-size: 1.1rem; }
+.heading-6 { font-size: 1rem; }

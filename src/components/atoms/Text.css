@@ -1,0 +1,12 @@
+.text {
+  color: #1f2937;
+  margin-bottom: var(--space-3);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}

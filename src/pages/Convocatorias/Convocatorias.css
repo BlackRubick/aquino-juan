@@ -1,0 +1,107 @@
+.convocatorias {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+.convocatorias__section { display: flex; flex-direction: column; gap: var(--space-4); }
+
+.convocatorias__header { display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: var(--space-3); }
+
+/* Stats */
+.convocatorias__stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
+.stat-item { background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); padding: var(--space-5); text-align: center; }
+.stat-item__number { display: block; font-size: 2rem; font-weight: 700; color: var(--color-primary); font-family: var(--font-family-heading); }
+.stat-item__label { color: var(--color-muted); font-size: 0.95rem; }
+
+.convocatorias__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.convocatorias__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.convocatoria-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-5);
+  display: grid;
+  gap: var(--space-3);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.convocatoria-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+.convocatoria-card__header { display: flex; justify-content: space-between; align-items: center; gap: var(--space-2); }
+
+.convocatoria-card__type {
+  display: inline-block;
+  background: rgba(44,122,123,0.1);
+  color: var(--color-accent);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.convocatoria-card__status { font-size: 0.85rem; font-weight: 600; }
+.convocatoria-card__status--vigente { color: #16a34a; }
+.convocatoria-card__status--próximamente { color: #ca8a04; }
+
+.convocatoria-card__title { font-family: var(--font-family-heading); color: var(--color-primary); font-size: 1.15rem; }
+.convocatoria-card__text { color: var(--color-muted); line-height: 1.6; }
+
+.convocatoria-card__meta { display: flex; flex-direction: column; gap: 8px; padding: var(--space-3); background: rgba(30,58,95,0.03); border-radius: var(--radius-sm); }
+.convocatoria-card__meta-item { display: flex; align-items: center; gap: 8px; color: var(--color-muted); font-size: 0.9rem; }
+.convocatoria-card__meta-item svg { color: var(--color-primary); }
+
+.convocatoria-card__actions { display: flex; gap: var(--space-3); align-items: center; flex-wrap: wrap; }
+.convocatoria-card__download { color: var(--color-primary); font-weight: 600; font-size: 0.9rem; }
+
+/* Process */
+.convocatorias__process { display: grid; gap: var(--space-4); }
+.process-step { background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); padding: var(--space-5); display: flex; gap: var(--space-4); align-items: start; }
+.process-step__number { min-width: 48px; width: 48px; height: 48px; background: var(--color-primary); color: #fff; border-radius: 50%; display: grid; place-items: center; font-size: 1.25rem; font-weight: 700; font-family: var(--font-family-heading); }
+.process-step h4 { font-family: var(--font-family-heading); color: var(--color-primary); margin-bottom: 6px; }
+.process-step p { color: var(--color-muted); font-size: 0.95rem; }
+
+/* FAQs */
+.convocatorias__faqs { display: grid; gap: var(--space-3); }
+.faq-item { background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); padding: var(--space-4); cursor: pointer; }
+.faq-item summary { font-weight: 600; color: var(--color-primary); font-family: var(--font-family-heading); list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::after { content: '+'; font-size: 1.5rem; color: var(--color-accent); }
+.faq-item[open] summary::after { content: '−'; }
+.faq-item p { margin-top: var(--space-3); color: var(--color-muted); line-height: 1.6; }
+
+/* Modal */
+.modal { position: fixed; inset: 0; display: grid; place-items: center; z-index: 50; padding: var(--space-4); }
+.modal__backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.5); backdrop-filter: blur(2px); }
+.modal__content { position: relative; background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); overflow: hidden; max-width: 640px; width: 100%; max-height: 90vh; overflow-y: auto; }
+.modal__close { position: absolute; top: 12px; right: 16px; font-size: 28px; color: var(--color-primary); background: none; border: none; cursor: pointer; z-index: 2; }
+.modal__body { padding: var(--space-6); display: grid; gap: var(--space-4); }
+.modal__details { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); padding: var(--space-4); background: rgba(30,58,95,0.03); border-radius: var(--radius-sm); }
+.modal__details strong { display: block; color: var(--color-primary); margin-bottom: 4px; }
+.modal__requirements strong { display: block; color: var(--color-primary); margin-bottom: 8px; }
+.modal__requirements ul { color: var(--color-muted); padding-left: 20px; display: grid; gap: 6px; }
+.modal__actions { display: flex; gap: var(--space-3); flex-wrap: wrap; }
+
+/* Reveal */
+.reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+.reveal--visible { opacity: 1; transform: none; }
+
+@media (min-width: 640px) {
+  .convocatorias__grid { grid-template-columns: repeat(2, 1fr); }
+  .convocatoria-card__meta { flex-direction: row; justify-content: space-between; }
+  .convocatorias__process { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .convocatorias__grid { grid-template-columns: repeat(3, 1fr); }
+  .convocatorias__process { grid-template-columns: repeat(4, 1fr); }
+}
