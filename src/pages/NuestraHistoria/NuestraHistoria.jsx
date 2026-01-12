@@ -159,7 +159,7 @@ export default function NuestraHistoria() {
       {/* Legado y futuro */}
       <section className="historia__section reveal">
         <div className="historia__legacy">
-          <Heading level={2}>Nuestro legado, nuestro futuro</Heading>
+          <Heading level={2} align="center">Nuestro legado, nuestro futuro</Heading>
           <Text>
             Cuatro décadas de historia nos respaldan, pero es hacia el futuro donde dirigimos nuestra mirada. Continuamos innovando en metodologías de enseñanza, fortaleciendo la investigación aplicada y ampliando nuestra red de impacto social.
           </Text>

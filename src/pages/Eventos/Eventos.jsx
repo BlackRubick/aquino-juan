@@ -3,111 +3,91 @@ import HeroSection from '../../components/organisms/HeroSection.jsx';
 import Heading from '../../components/atoms/Heading.jsx';
 import Text from '../../components/atoms/Text.jsx';
 import Button from '../../components/atoms/Button.jsx';
+import directoraImg from '../../assets/images/directora-1.JPG';
+import diaMuertosImg from '../../assets/images/dia-de-muertos.JPG';
+import fiscaliaImg from '../../assets/images/fiscalia.JPG';
+import semillasImg from '../../assets/images/semillas.JPG';
 import './Eventos.css';
 
 const eventsData = [
+  // DESTACADOS
   { 
     id: 1, 
-    title: 'Seminario Internacional de Trabajo Social Comunitario', 
-    date: '2026-02-14', 
-    category: 'Seminario',
-    summary: 'Reflexión sobre metodologías de intervención comunitaria con expertos nacionales e internacionales.',
-    description: 'Espacio de intercambio académico que reúne a profesionales del trabajo social para analizar metodologías innovadoras de intervención comunitaria. Contaremos con ponentes de Argentina, Chile y México que compartirán experiencias exitosas en proyectos de desarrollo social.',
+    title: 'Congreso Internacional de Trabajo Social', 
+    date: '2025-10-23', 
+    category: 'Destacado',
+    summary: 'El pasado 23 de octubre de 2025 se llevó a cabo el VII Congreso Internacional de Trabajo Social, bajo el lema "Tejiendo Caminos de Trabajo Social, Ante los Nuevos Contextos Emergentes".',
+    description: 'El VII Congreso Internacional de Trabajo Social reunió a profesionales, académicos y estudiantes de distintos países bajo el lema "Tejiendo Caminos de Trabajo Social, Ante los Nuevos Contextos Emergentes". Durante el evento se presentaron ponencias, mesas de diálogo y talleres sobre los retos actuales del trabajo social en América Latina.',
     location: 'Auditorio Principal',
     schedule: '9:00 AM - 6:00 PM',
     image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop',
-    spots: 120,
+    spots: 200,
     price: 'Gratuito'
   },
   { 
     id: 2, 
-    title: 'Foro Nacional de Derechos Humanos y Justicia Social', 
-    date: '2026-03-10', 
-    category: 'Foro',
-    summary: 'Diálogo sobre políticas públicas y defensa de derechos humanos con organizaciones civiles.',
-    description: 'Encuentro que promueve el diálogo entre academia, gobierno y sociedad civil sobre la situación de los derechos humanos en México. Participan defensores, investigadores y autoridades para construir propuestas de política pública.',
-    location: 'Sala de Conferencias',
-    schedule: '10:00 AM - 5:00 PM',
-    image: 'https://images.unsplash.com/photo-1573167243872-43c6433b9d40?q=80&w=800&auto=format&fit=crop',
-    spots: 80,
-    price: 'Gratuito'
-  },
-  { 
-    id: 3, 
-    title: 'Encuentro de Egresados 2026', 
-    date: '2026-06-22', 
-    category: 'Encuentro',
-    summary: 'Red de colaboración, testimonios y fortalecimiento de vínculos entre generaciones.',
-    description: 'Reencuentro anual que fortalece la red de egresados de la escuela. Incluye paneles de experiencias profesionales, talleres de actualización, actividades recreativas y espacio de networking para generar oportunidades de colaboración.',
-    location: 'Campus completo',
-    schedule: '9:00 AM - 8:00 PM',
-    image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=800&auto=format&fit=crop',
-    spots: 200,
-    price: 'Gratuito para egresados'
-  },
-  { 
-    id: 4, 
-    title: 'Taller: Metodologías Participativas en Intervención Social', 
-    date: '2026-04-18', 
-    category: 'Taller',
-    summary: 'Herramientas prácticas para diagnósticos comunitarios y diseño de proyectos participativos.',
-    description: 'Taller intensivo de 2 días donde los participantes aprenderán técnicas de diagnóstico participativo, mapeo comunitario, construcción de matrices de planificación y diseño de proyectos con enfoque de derechos.',
-    location: 'Laboratorio de Prácticas',
-    schedule: '9:00 AM - 2:00 PM',
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop',
-    spots: 40,
-    price: '$500'
-  },
-  { 
-    id: 5, 
-    title: 'Conferencia Magistral: Género y Políticas Públicas', 
-    date: '2026-05-08', 
-    category: 'Conferencia',
-    summary: 'Análisis de la transversalización de género en programas sociales mexicanos.',
-    description: 'Conferencia magistral impartida por la Dra. Marcela Lagarde sobre los avances y desafíos en la incorporación de la perspectiva de género en las políticas públicas de México. Incluye sesión de preguntas y respuestas.',
+    title: 'Presentación de directora', 
+    date: '2025-10-21', 
+    category: 'Destacado',
+    summary: 'El día de hoy 21 de octubre del presente año se presentó ante la comunidad educativa la Lic. Gabriela Esperanza Méndez Bermúdez como nueva directora de la Escuela Superior de Trabajo Social "Jesús Aquino Juan".',
+    description: 'La comunidad educativa de la Escuela Superior de Trabajo Social "Jesús Aquino Juan" dio la bienvenida a la Lic. Gabriela Esperanza Méndez Bermúdez como nueva directora de la institución. En una ceremonia emotiva, se destacó su trayectoria profesional y su compromiso con la educación y el trabajo social.',
     location: 'Auditorio Principal',
-    schedule: '5:00 PM - 7:00 PM',
-    image: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?q=80&w=800&auto=format&fit=crop',
+    schedule: '10:00 AM - 12:00 PM',
+    image: directoraImg,
     spots: 150,
     price: 'Gratuito'
   },
   { 
-    id: 6, 
-    title: 'Jornada de Servicio Social Comunitario', 
-    date: '2025-11-15', 
-    category: 'Jornada',
-    summary: 'Actividad práctica de vinculación con comunidades en situación de vulnerabilidad.',
-    description: 'Actividad de campo donde estudiantes y docentes realizan acciones de apoyo comunitario: brigadas de salud, talleres educativos, actividades recreativas con niños y jornadas de limpieza en comunidades marginadas.',
-    location: 'Comunidad El Rosario',
-    schedule: '8:00 AM - 4:00 PM',
-    image: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=800&auto=format&fit=crop',
-    spots: 60,
+    id: 3, 
+    title: '47 años de la Profesionalización del trabajo Social en Chiapas', 
+    date: '2025-09-24', 
+    category: 'Destacado',
+    summary: '"Nuestro aniversario momentos para celebrar las alegrías de hoy, las memorias del ayer y las esperanzas del mañana".',
+    description: 'La Escuela Superior de Trabajo Social "Jesús Aquino Juan" celebró 47 años de la profesionalización del Trabajo Social en Chiapas. Un evento lleno de emotivos recuerdos, reconocimientos a la labor educativa y la visión de futuro que guía a la institución en la formación de profesionales comprometidos con el bienestar social.',
+    location: 'Campus completo',
+    schedule: '9:00 AM - 8:00 PM',
+    image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=800&auto=format&fit=crop',
+    spots: 300,
+    price: 'Gratuito'
+  },
+  // NOTICIAS
+  { 
+    id: 4, 
+    title: 'Día de muertos', 
+    date: '2025-10-29', 
+    category: 'Noticia',
+    summary: 'Hoy miércoles 29 de octubre de 2025, dentro del marco del "DIA DE MUERTOS O DE LOS FIELES DIFUNTOS", nuestra comunidad educativa se une a la celebración que remarca nuestra identidad como parte de nuestra cultura mexicana.',
+    description: 'La comunidad educativa de la Escuela Superior de Trabajo Social "Jesús Aquino Juan" celebró el Día de Muertos con una ofrenda tradicional, actividades culturales y reflexiones sobre la importancia de preservar nuestras tradiciones mexicanas. Estudiantes y docentes participaron en la elaboración de altares y compartieron la riqueza de esta festividad.',
+    location: 'Plaza central',
+    schedule: '10:00 AM - 4:00 PM',
+    image: diaMuertosImg,
+    spots: 200,
     price: 'Gratuito'
   },
   { 
-    id: 7, 
-    title: 'Diplomado en Gestión de Proyectos Sociales', 
-    date: '2026-07-10', 
-    category: 'Diplomado',
-    summary: 'Programa de actualización profesional de 120 horas con certificación oficial.',
-    description: 'Programa de educación continua que aborda diseño, implementación, monitoreo y evaluación de proyectos sociales. Incluye módulos de gestión de recursos, trabajo con donantes, metodologías de Marco Lógico y enfoque de resultados.',
-    location: 'Aulas 201-203',
-    schedule: 'Sábados 9:00 AM - 2:00 PM',
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop',
-    spots: 30,
-    price: '$8,500'
+    id: 5, 
+    title: 'Visita guiada a la Fiscalía de la Mujer', 
+    date: '2025-10-23', 
+    category: 'Noticia',
+    summary: 'Días 23 y 24 de octubre, alumnos de los primeros semestres de la Escuela Superior de Trabajo Social "Jesús Aquino Juan" visitaron la Fiscalía de la Mujer con la finalidad que conozcan las funciones que desempeñan las trabajadoras y trabajadores sociales en diferentes áreas de intervención.',
+    description: 'Estudiantes de primer semestre realizaron una visita educativa a la Fiscalía de la Mujer para conocer de primera mano el trabajo que realizan los profesionales en Trabajo Social en el ámbito de la justicia y la atención a víctimas de violencia de género. Esta actividad forma parte de las prácticas de vinculación con instituciones.',
+    location: 'Fiscalía de la Mujer',
+    schedule: '9:00 AM - 1:00 PM',
+    image: fiscaliaImg,
+    spots: 40,
+    price: 'Gratuito'
   },
   { 
-    id: 8, 
-    title: 'Coloquio de Investigación en Trabajo Social', 
-    date: '2025-10-20', 
-    category: 'Coloquio',
-    summary: 'Presentación de investigaciones de estudiantes y docentes sobre problemáticas sociales actuales.',
-    description: 'Espacio académico donde estudiantes de licenciatura y posgrado presentan avances de sus investigaciones. Se abordan temas como migración, violencia de género, desigualdad, políticas sociales y derechos humanos.',
-    location: 'Sala de Usos Múltiples',
-    schedule: '9:00 AM - 3:00 PM',
-    image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=800&auto=format&fit=crop',
-    spots: 100,
+    id: 6, 
+    title: 'Generación 2021 - 2025 "semillas que fructifican"', 
+    date: '2025-08-15', 
+    category: 'Noticia',
+    summary: '15 de agosto de 2025, la Escuela Superior de Trabajo Social "Jesús Aquino Juan", llevó a cabo la ceremonia de graduación de la sexagésimo tercera, generación 2021 - 2025 "semillas que fructifican" de Licenciadas y Licenciados En Trabajo Social.',
+    description: 'En una emotiva ceremonia, la Escuela Superior de Trabajo Social "Jesús Aquino Juan" graduó a la sexagésima tercera generación 2021-2025 bajo el lema "semillas que fructifican". Los nuevos profesionales en Trabajo Social recibieron sus títulos rodeados de familiares, docentes y autoridades, listos para contribuir al desarrollo social de sus comunidades.',
+    location: 'Auditorio Principal',
+    schedule: '10:00 AM - 1:00 PM',
+    image: semillasImg,
+    spots: 300,
     price: 'Gratuito'
   }
 ];
@@ -135,7 +115,8 @@ export default function Eventos() {
       result = result.filter(e => e.category === categoryFilter);
     }
     
-    return result.sort((a, b) => new Date(b.date) - new Date(a.date));
+    // Mantener el orden original del array (por id)
+    return result.sort((a, b) => a.id - b.id);
   }, [filter, categoryFilter]);
 
   useEffect(() => {

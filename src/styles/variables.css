@@ -1,17 +1,27 @@
 :root {
-  /* Brand palette (requested) */
-  --brand-navy: #1e3a5f;
-  --brand-gray: #4a5568;
-  --brand-teal: #2c7a7b;
+  /* Brand palette (navy + teal + coral/orange) */
+  --brand-navy: #2c3e50;
+  --brand-navy-soft: #34495e;
+  --brand-teal: #1abc9c;
+  --brand-orange: #e67e22;
+  --brand-orange-dark: #d35400;
   --brand-white: #ffffff;
 
   /* Mapped site variables */
   --color-primary: var(--brand-navy);
-  --color-secondary: #e2b807; /* keeping an accent secondary for contrast */
+  --color-primary-strong: var(--brand-navy-soft);
+  --color-secondary: var(--brand-orange);
+  --color-secondary-strong: var(--brand-orange-dark);
   --color-accent: var(--brand-teal);
   --color-surface: var(--brand-white);
-  --color-muted: var(--brand-gray);
+  --color-muted: #4a5568;
   --color-background: #f7f9fb;
+
+  /* Buttons */
+  --color-button-primary: var(--brand-orange);
+  --color-button-primary-hover: var(--brand-orange-dark);
+  --color-button-secondary: var(--brand-navy);
+  --color-button-secondary-hover: var(--brand-navy-soft);
 
   /* Typography */
   --font-family-base: 'Inter', 'Roboto', system-ui, -apple-system, sans-serif;

@@ -3,27 +3,41 @@
   align-items: center;
   justify-content: space-between;
   padding: var(--space-4) var(--space-6);
-  background: #fff;
-  border-bottom: 1px solid #e5e7eb;
+  background: #1abc9c;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 10;
+  color: #fff;
 }
 
 .header__brand {
   display: flex;
   align-items: center;
   gap: var(--space-3);
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.header__brand:hover {
+  opacity: 0.9;
+}
+
+.header__logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .header__title {
   display: block;
   font-weight: 700;
-  color: #0f172a;
+  color: #fff;
 }
 
 .header__subtitle {
   display: block;
-  color: var(--color-muted);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.9rem;
 }

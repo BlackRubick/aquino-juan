@@ -1,12 +1,12 @@
 .footer {
-  background: #0b2340;
+  background: #1abc9c;
   color: #fff;
 }
 
 /* Sección de contacto */
 .footer__contact {
   padding: var(--space-7) var(--space-6);
-  background: linear-gradient(135deg, rgba(30,58,95,0.95), rgba(11,35,64,0.98));
+  background: #1abc9c;
 }
 
 .footer__contact-content {
@@ -44,7 +44,7 @@
 }
 
 .footer__contact-form {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.08);
   padding: var(--space-5);
   border-radius: var(--radius-lg);
   backdrop-filter: blur(10px);
@@ -53,8 +53,8 @@
 /* Footer inferior */
 .footer__bottom {
   padding: var(--space-5) var(--space-6);
-  background: #0a1f38;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  background: #1abc9c;
+  border-top: 1px solid rgba(255,255,255,0.15);
 }
 
 .footer__bottom-content {

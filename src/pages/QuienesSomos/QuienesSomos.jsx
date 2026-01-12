@@ -4,6 +4,8 @@ import Heading from '../../components/atoms/Heading.jsx';
 import Text from '../../components/atoms/Text.jsx';
 import Button from '../../components/atoms/Button.jsx';
 import { Link } from 'react-router-dom';
+import alumnosImg from '../../assets/images/quienes-alumnos.JPG';
+import entradaImg from '../../assets/images/entrada.JPG';
 import './QuienesSomos.css';
 
 export default function QuienesSomos() {
@@ -21,36 +23,65 @@ export default function QuienesSomos() {
         title="Quiénes somos"
         description="Formamos profesionales íntegros para transformar realidades con participación, respeto y justicia social."
         ctaLabel="Nuestra misión"
-        image="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop"
+        ctaLink="#mision"
+        image={entradaImg}
       />
 
-      <section className="quienes__grid reveal">
+      {/* Información de la institución */}
+      <section className="quienes__section reveal">
+        <Heading level={2} align="center">Escuela Superior de Trabajo Social Jesús Aquino Juan</Heading>
+        <div className="qs-history-container">
+          <div className="qs-history">
+            <Text>
+              Esta institución de Educación Superior se funda el <strong>24 de Septiembre de 1978</strong> como escuela profesional de nivel medio superior del Instituto de Ciencias y Artes de Chiapas, siendo gobernador el Lic. Salomón González Blanco. Inicia sus actividades en las instalaciones de la Escuela de Técnicos en Contabilidad y Administración (ETCAICACH), donde permaneció por dos años.
+            </Text>
+            <Text>
+              En <strong>Octubre del 2007</strong>, por gestión de la autoridad municipal y la comunidad de Trabajo Social (estudiantes y egresados), y en reconocimiento a la labor educativa del director fundador, percursor y promotor del Trabajo Social en Chiapas, la autoridad educativa acordó nombrar a esta Institución: <strong>Escuela Superior de Trabajo Social "Jesús Aquino Juan"</strong>.
+            </Text>
+          </div>
+          <div className="qs-history-image">
+            <img src={alumnosImg} alt="Estudiantes de Trabajo Social" />
+          </div>
+        </div>
+      </section>
+
+      <section id="mision" className="quienes__grid reveal">
         <article className="qs-card">
-          <img className="qs-card__img" src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?q=80&w=1200&auto=format&fit=crop" alt="Trabajo comunitario" />
+          <img className="qs-card__img" src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?q=80&w=1200&auto=format&fit=crop" alt="Misión" />
           <div className="qs-card__body">
             <Heading level={2}>Misión</Heading>
-            <Text>Formar profesionales en Trabajo Social con enfoque humano, rigor académico y compromiso ético para intervenir en problemáticas sociales, promoviendo el desarrollo comunitario y la participación ciudadana.</Text>
+            <Text>Ser una institución de educación superior de excelencia dedicada a educar y formar integramente hombres y mujeres con liderazgo, no sólo académico e intelectual sino también humano y social, que logren reflexionar, comprender y transformar los escenarios adversos al bienestar, armonía, educación, seguridad, democracia y derechos humanos, para contribuir así al mejoramiento de las políticas sociales multiétnicas y pluriculturales de desarrollo nacional y mundial.</Text>
           </div>
         </article>
         <article className="qs-card">
-          <img className="qs-card__img" src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop" alt="Visión académica" />
+          <img className="qs-card__img" src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop" alt="Visión" />
           <div className="qs-card__body">
             <Heading level={2}>Visión</Heading>
-            <Text>Ser referente nacional e internacional en formación de profesionales del trabajo social, distinguiéndonos por la innovación educativa, investigación aplicada y vinculación efectiva con comunidades.</Text>
+            <Text>Impartir una educación integral, pertinente y de calidad que capacite y motive a los profesionales del trabajo social a aprehender la realidad, para actuar en ella e impulsar los cambios oportunos en los fenómenos relacionados con las disfunciones sociales que provocan perturbaciones en las esferas de la relación individual, familiar y comunitaria.</Text>
           </div>
         </article>
         <article className="qs-card">
           <img className="qs-card__img" src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop" alt="Valores" />
           <div className="qs-card__body">
             <Heading level={2}>Valores</Heading>
-            <ul className="qs-values">
-              <li>Solidaridad y participación comunitaria</li>
-              <li>Respeto a la dignidad humana</li>
-              <li>Justicia social y equidad</li>
-              <li>Transparencia y responsabilidad</li>
-              <li>Compromiso ético profesional</li>
-              <li>Inclusión y diversidad</li>
-            </ul>
+            <div className="qs-values">
+              <span className="qs-value-badge">Amor</span>
+              <span className="qs-value-badge">Autenticidad</span>
+              <span className="qs-value-badge">Autoestima</span>
+              <span className="qs-value-badge">Democracia</span>
+              <span className="qs-value-badge">Empatía</span>
+              <span className="qs-value-badge">Generosidad</span>
+              <span className="qs-value-badge">Honestidad</span>
+              <span className="qs-value-badge">Integridad</span>
+              <span className="qs-value-badge">Justicia Social</span>
+              <span className="qs-value-badge">Lealtad</span>
+              <span className="qs-value-badge">Libertad</span>
+              <span className="qs-value-badge">Perseverancia</span>
+              <span className="qs-value-badge">Respeto</span>
+              <span className="qs-value-badge">Responsabilidad</span>
+              <span className="qs-value-badge">Solidaridad</span>
+              <span className="qs-value-badge">Tolerancia</span>
+            </div>
           </div>
         </article>
       </section>

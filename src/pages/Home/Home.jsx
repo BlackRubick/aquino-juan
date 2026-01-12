@@ -6,6 +6,7 @@ import Heading from '../../components/atoms/Heading.jsx';
 import Text from '../../components/atoms/Text.jsx';
 import Button from '../../components/atoms/Button.jsx';
 import { Link } from 'react-router-dom';
+import inicioImg from '../../assets/images/inicio.jpg';
 import './Home.css';
 
 const sampleTeachers = [
@@ -68,7 +69,8 @@ export default function Home() {
         title="Formamos profesionales con vocación social"
         description="Compromiso con la justicia social, la participación y el bienestar comunitario."
         ctaLabel="Conoce más"
-        image="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1200&auto=format&fit=crop"
+        ctaLink="/quienes-somos"
+        image={inicioImg}
       />
 
       <section className="home__section reveal">
