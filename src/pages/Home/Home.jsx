@@ -7,6 +7,7 @@ import Text from '../../components/atoms/Text.jsx';
 import Button from '../../components/atoms/Button.jsx';
 import { Link } from 'react-router-dom';
 import inicioImg from '../../assets/images/inicio.jpg';
+import tourVideo from '../../assets/images/tour.mp4';
 import './Home.css';
 
 const sampleTeachers = [
