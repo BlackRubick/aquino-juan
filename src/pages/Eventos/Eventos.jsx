@@ -4,7 +4,7 @@ import Heading from '../../components/atoms/Heading.jsx';
 import Text from '../../components/atoms/Text.jsx';
 import Button from '../../components/atoms/Button.jsx';
 import directoraImg from '../../assets/images/directora-1.JPG';
-import diaMuertosImg from '../../assets/images/dia-de-muertos.JPG';
+import diaMuertosImg from '../../assets/images/diademuertos.JPG';
 import fiscaliaImg from '../../assets/images/fiscalia.JPG';
 import semillasImg from '../../assets/images/semillas.JPG';
 import './Eventos.css';
