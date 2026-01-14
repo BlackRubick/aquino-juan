@@ -4,9 +4,9 @@ import HeroSection from '../../components/organisms/HeroSection.jsx';
 import Heading from '../../components/atoms/Heading.jsx';
 import Text from '../../components/atoms/Text.jsx';
 import Button from '../../components/atoms/Button.jsx';
-import diaMuertosImg from '../../assets/images/diademuertos.jpg';
-import fiscaliaImg from '../../assets/images/fiscalia.jpg';
-import semillasImg from '../../assets/images/semillas.jpg';
+import diaMuertosImg from '../../assets/images/diademuertos.JPG';
+import fiscaliaImg from '../../assets/images/fiscalia.JPG';
+import semillasImg from '../../assets/images/semillas.JPG';
 import './VidaUniversitaria.css';
 
 export default function VidaUniversitaria() {
