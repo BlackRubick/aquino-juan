@@ -4,7 +4,7 @@ import HeroSection from '../../components/organisms/HeroSection.jsx';
 import Heading from '../../components/atoms/Heading.jsx';
 import Text from '../../components/atoms/Text.jsx';
 import Button from '../../components/atoms/Button.jsx';
-import diaMuertosImg from '../../assets/images/dia-de-muertos.jpg';
+import diaMuertosImg from '../../assets/images/diademuertos.jpg';
 import fiscaliaImg from '../../assets/images/fiscalia.jpg';
 import semillasImg from '../../assets/images/semillas.jpg';
 import './VidaUniversitaria.css';
