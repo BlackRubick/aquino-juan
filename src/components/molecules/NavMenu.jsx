@@ -4,11 +4,12 @@ import './NavMenu.css';
 
 const links = [
   { to: '/', label: 'Inicio' },
-  { to: '/quienes-somos', label: 'Quienes Somos' },
-  { to: '/nuestra-historia', label: 'Nuestra Historia' },
-  { to: '/eventos', label: 'Eventos' },
-  { to: '/convocatorias', label: 'Convocatorias' },
-  { to: '/docentes', label: 'Nuestros Docentes' }
+  { to: '/nosotros', label: 'Nosotros' },
+  { to: '/programas', label: 'Programas' },
+  { to: '/admisiones', label: 'Admisiones' },
+  { to: '/docentes', label: 'Docentes' },
+  { to: '/vida-universitaria', label: 'Vida Universitaria' },
+  { to: '/contacto', label: 'Contacto' }
 ];
 
 export default function NavMenu() {

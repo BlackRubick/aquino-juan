@@ -116,7 +116,7 @@ export default function Docentes() {
   return (
     <div className="docentes">
       <HeroSection
-        title="Nuestro claustro docente"
+        title="Nuestros docentes"
         description="Conoce a los profesionales que guían la formación académica y el desarrollo de competencias de nuestros estudiantes con experiencia, compromiso y excelencia."
         ctaLabel="Conoce al equipo"
         image="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200&auto=format&fit=crop"

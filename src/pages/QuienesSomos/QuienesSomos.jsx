@@ -50,14 +50,14 @@ export default function QuienesSomos() {
           <img className="qs-card__img" src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?q=80&w=1200&auto=format&fit=crop" alt="Misión" />
           <div className="qs-card__body">
             <Heading level={2}>Misión</Heading>
-            <Text>Ser una institución de educación superior de excelencia dedicada a educar y formar integramente hombres y mujeres con liderazgo, no sólo académico e intelectual sino también humano y social, que logren reflexionar, comprender y transformar los escenarios adversos al bienestar, armonía, educación, seguridad, democracia y derechos humanos, para contribuir así al mejoramiento de las políticas sociales multiétnicas y pluriculturales de desarrollo nacional y mundial.</Text>
+            <p className="qs-card__text">Ser una institución de educación superior de excelencia dedicada a educar y formar integramente hombres y mujeres con liderazgo, no sólo académico e intelectual sino también humano y social, que logren reflexionar, comprender y transformar los escenarios adversos al bienestar, armonía, educación, seguridad, democracia y derechos humanos, para constribuir asi al mejoramiento de las políticas sociales multiétnicas y pluriculturales de desarrollo nacional y mundial.</p>
           </div>
         </article>
         <article className="qs-card">
           <img className="qs-card__img" src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&auto=format&fit=crop" alt="Visión" />
           <div className="qs-card__body">
             <Heading level={2}>Visión</Heading>
-            <Text>Impartir una educación integral, pertinente y de calidad que capacite y motive a los profesionales del trabajo social a aprehender la realidad, para actuar en ella e impulsar los cambios oportunos en los fenómenos relacionados con las disfunciones sociales que provocan perturbaciones en las esferas de la relación individual, familiar y comunitaria.</Text>
+            <p className="qs-card__text">Impartir una educación inegral, pertinente y de calidad que capacite y motive a los profesionales del trabajo social a aprehender la realidad, para actuar en ella e impulsar los cambios oportunos en los fenómenos relacionados con las disfunciones sociales que provocan perturbaciones en las esferas de la relacion individual, familiar y comunitario</p>
           </div>
         </article>
         <article className="qs-card">

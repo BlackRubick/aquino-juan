@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import NavMenu from '../molecules/NavMenu.jsx';
-import Icon from '../atoms/Icon.jsx';
+import Button from '../atoms/Button.jsx';
 import escudoImg from '../../assets/images/escudo.png';
 import './Header.css';
 
@@ -14,7 +14,12 @@ export default function Header() {
           <span className="header__subtitle">Jesus Aquino Juan</span>
         </div>
       </Link>
-      <NavMenu />
+      <div className="header__actions">
+        <NavMenu />
+        <Link to="/admisiones" className="header__cta">
+          <Button variant="primary" size="sm">Inscríbete Ahora</Button>
+        </Link>
+      </div>
     </header>
   );
 }

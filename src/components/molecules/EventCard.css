@@ -1,12 +1,39 @@
 .event-card {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
-  padding: var(--space-4);
+  gap: 0;
   border-radius: var(--radius-md);
   background: #fff;
   box-shadow: var(--shadow-sm);
   transition: transform .3s ease, box-shadow .3s ease;
+  overflow: hidden;
 }
 
-.event-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.event-card:hover { 
+  transform: translateY(-4px); 
+  box-shadow: var(--shadow-md); 
+}
+
+.event-card__image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.event-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover .event-card__image img {
+  transform: scale(1.05);
+}
+
+.event-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+}

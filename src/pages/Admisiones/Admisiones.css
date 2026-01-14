@@ -1,0 +1,350 @@
+.admisiones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+}
+
+.admisiones__tabs {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+}
+
+.admisiones__tab {
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-md);
+  background: rgba(26, 188, 156, 0.1);
+  color: var(--color-accent);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.admisiones__tab:hover {
+  background: var(--color-accent);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.admisiones__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+/* Steps */
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-4);
+}
+
+.step-card {
+  background: #fff;
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.step-card::after {
+  content: '→';
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: var(--color-accent);
+  opacity: 0.3;
+}
+
+.step-card:last-child::after {
+  display: none;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.step-card__number {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--color-accent), #16a085);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 auto var(--space-3);
+}
+
+.step-card h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+  font-family: var(--font-family-heading);
+  font-size: 1.1rem;
+}
+
+.step-card p {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Documentos */
+.documentos-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-5);
+}
+
+.documentos-list {
+  background: #fff;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.documentos-list h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+  font-family: var(--font-family-heading);
+}
+
+.documentos-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.documentos-list li {
+  padding-left: var(--space-4);
+  position: relative;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.documentos-list li::before {
+  content: '📄';
+  position: absolute;
+  left: 0;
+}
+
+.documentos-note {
+  background: linear-gradient(135deg, rgba(26, 188, 156, 0.1), rgba(44, 122, 123, 0.1));
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--color-accent);
+}
+
+.note-icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-2);
+}
+
+.documentos-note h4 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+
+.documentos-note p {
+  color: var(--color-muted);
+  margin-bottom: var(--space-2);
+  line-height: 1.6;
+}
+
+/* Costos */
+.costos-tabs {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.costos-tab {
+  padding: var(--space-3) var(--space-6);
+  border: 2px solid var(--color-accent);
+  background: transparent;
+  color: var(--color-accent);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.costos-tab.active {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.costos-table {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.costos-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.costos-table th {
+  background: var(--color-primary);
+  color: #fff;
+  padding: var(--space-4);
+  text-align: left;
+  font-weight: 600;
+}
+
+.costos-table td {
+  padding: var(--space-4);
+  border-bottom: 1px solid #eee;
+}
+
+.costos-table tr:last-child td {
+  border-bottom: none;
+}
+
+.costo-amount {
+  text-align: right;
+  font-weight: 700;
+  color: var(--color-accent);
+  font-size: 1.1rem;
+}
+
+.costos-info {
+  background: linear-gradient(135deg, rgba(26, 188, 156, 0.1), rgba(44, 122, 123, 0.1));
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  margin-top: var(--space-4);
+}
+
+.costos-info p {
+  color: var(--color-muted);
+  margin-bottom: var(--space-2);
+  line-height: 1.6;
+}
+
+/* Convocatorias */
+.convocatorias-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+.convocatoria-card {
+  background: #fff;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.convocatoria-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.convocatoria-badge {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-4);
+  padding: var(--space-2) var(--space-3);
+  background: #4CAF50;
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.convocatoria-card h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+  font-family: var(--font-family-heading);
+}
+
+.convocatoria-date {
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+
+.convocatoria-card p {
+  color: var(--color-muted);
+  margin-bottom: var(--space-4);
+  line-height: 1.6;
+}
+
+/* CTA */
+.admisiones__cta {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  padding: var(--space-8) var(--space-6);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  color: #fff;
+}
+
+.admisiones__cta h2,
+.admisiones__cta p {
+  color: #fff;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  margin-top: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 1024px) {
+  .steps-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .step-card::after {
+    display: none;
+  }
+
+  .documentos-grid,
+  .convocatorias-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    grid-template-columns: 1fr;
+  }
+
+  .costos-tabs {
+    flex-direction: column;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

@@ -41,3 +41,19 @@
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.9rem;
 }
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.header__cta {
+  display: inline-block;
+}
+
+@media (max-width: 1024px) {
+  .header__cta {
+    display: none;
+  }
+}
