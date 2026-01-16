@@ -85,7 +85,7 @@
 
 .social-buttons {
   display: flex;
-  gap: var(--spacing-2xl);
+  gap: 2rem;
 }
 
 .social-btn {
@@ -119,6 +119,15 @@
 .social-btn:nth-child(2):hover {
   transform: translateY(-4px) scale(1.1);
   box-shadow: 0 15px 35px rgba(255, 0, 0, 0.35);
+}
+
+.social-btn:nth-child(3) {
+  background: #25d366;
+}
+
+.social-btn:nth-child(3):hover {
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 15px 35px rgba(37, 211, 102, 0.35);
 }
 }
 
