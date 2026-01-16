@@ -61,9 +61,7 @@ const sampleEvents = [
 ];
 
 const callsPreview = [
-  { id: 'c1', title: 'Becas de Excelencia 2026', type: 'Becas' },
-  { id: 'c2', title: 'Servicio Social 2026-1', type: 'Licenciatura' },
-  { id: 'c3', title: 'Posgrado en Intervención Social', type: 'Posgrado' }
+  { id: 'c2', title: 'Servicio Social 2026-1', type: 'Licenciatura' }
 ];
 
 const testimonios = [
@@ -101,14 +99,6 @@ const faqs = [
   {
     pregunta: '¿Qué requisitos necesito?',
     respuesta: 'Certificado de bachillerato, acta de nacimiento, CURP, comprobante de domicilio y aprobar el examen de admisión.'
-  },
-  {
-    pregunta: '¿Tienen becas disponibles?',
-    respuesta: 'Sí, ofrecemos becas del 20% al 50% según tu promedio y situación socioeconómica. También contamos con convenios de financiamiento.'
-  },
-  {
-    pregunta: '¿Cuál es el costo?',
-    respuesta: 'La inversión mensual va desde $1,800 MXN. Incluye acceso a biblioteca, laboratorios y actividades extracurriculares.'
   },
   {
     pregunta: '¿El título está reconocido?',
@@ -172,12 +162,6 @@ export default function Home() {
                 </svg>
                 <span>Titulación 100%</span>
               </div>
-              <div className="hero-badge">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                <span>Becas Disponibles</span>
-              </div>
             </div>
           </div>
         </div>
@@ -196,16 +180,6 @@ export default function Home() {
             <h3 className="home-card__title">Requisitos</h3>
             <p className="home-card__text">Documentos necesarios para inscribirte</p>
             <Button variant="ghost">Ver requisitos</Button>
-          </Link>
-          <Link to="/admisiones" className="home-card">
-            <div className="home-card__icon" aria-hidden>
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
-            <h3 className="home-card__title">Costos</h3>
-            <p className="home-card__text">Inversión mensual y opciones de becas</p>
-            <Button variant="ghost">Ver costos</Button>
           </Link>
           <Link to="/convocatorias" className="home-card">
             <div className="home-card__icon" aria-hidden>
@@ -246,28 +220,6 @@ export default function Home() {
               <li><strong>Horario:</strong> Matutino/Vespertino</li>
             </ul>
             <Link to="/programas"><Button variant="primary">Ver Plan de Estudios</Button></Link>
-          </article>
-          <article className="program-card-new">
-            <div className="program-card-new__icon">�</div>
-            <h3>Posgrado en Intervención Social</h3>
-            <ul className="program-card-new__details">
-              <li><strong>Duración:</strong> 4 semestres</li>
-              <li><strong>Título:</strong> Maestría</li>
-              <li><strong>Modalidad:</strong> Sabatino</li>
-              <li><strong>Horario:</strong> 8:00 - 16:00</li>
-            </ul>
-            <Link to="/programas"><Button variant="primary">Más Información</Button></Link>
-          </article>
-          <article className="program-card-new">
-            <div className="program-card-new__icon">⭐</div>
-            <h3>Educación Continua</h3>
-            <ul className="program-card-new__details">
-              <li><strong>Duración:</strong> Variable</li>
-              <li><strong>Certificación:</strong> Diplomados</li>
-              <li><strong>Modalidad:</strong> Presencial/Online</li>
-              <li><strong>Horario:</strong> Flexible</li>
-            </ul>
-            <Link to="/programas"><Button variant="primary">Ver Programas</Button></Link>
           </article>
         </div>
       </section>
@@ -313,12 +265,6 @@ export default function Home() {
               <p>Desde $1,800 MXN</p>
             </div>
           </div>
-          <div className="admission-info__item">
-            <div>
-              <strong>Becas disponibles</strong>
-              <p>Del 20% al 50%</p>
-            </div>
-          </div>
         </div>
         <div className="cta-center">
           <Link to="/admisiones">
@@ -347,9 +293,9 @@ export default function Home() {
             <div className="stat-new__context">de prácticas profesionales</div>
           </div>
           <div className="stat-new">
-            <div className="stat-new__number">3</div>
-            <div className="stat-new__label">Programas</div>
-            <div className="stat-new__context">académicos vigentes</div>
+            <div className="stat-new__number">1</div>
+            <div className="stat-new__label">Programa</div>
+            <div className="stat-new__context">académico (Licenciatura)</div>
           </div>
         </div>
         <div className="home__stats-extra">
@@ -360,10 +306,6 @@ export default function Home() {
           <div className="stat-extra">
             <strong>100%</strong>
             <span>Titulación</span>
-          </div>
-          <div className="stat-extra">
-            <strong>40%</strong>
-            <span>Con becas</span>
           </div>
         </div>
       </section>

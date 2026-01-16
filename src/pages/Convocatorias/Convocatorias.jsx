@@ -18,39 +18,6 @@ const calls = [
     doc: '#' 
   },
   { 
-    id: 2, 
-    title: 'Becas de Excelencia Académica 2025', 
-    deadline: '2025-03-20', 
-    type: 'Becas', 
-    summary: 'Apoyo económico del 50% al 100% de colegiatura para estudiantes con alto rendimiento académico.',
-    requirements: ['Promedio mínimo de 9.0', 'Carta de motivos', 'Comprobante de ingresos familiares'],
-    places: 20,
-    status: 'vigente',
-    doc: '#' 
-  },
-  { 
-    id: 3, 
-    title: 'Admisión Posgrado en Intervención Social', 
-    deadline: '2025-04-30', 
-    type: 'Posgrado', 
-    summary: 'Proceso de admisión para maestría en Intervención Social con enfoque en desarrollo comunitario.',
-    requirements: ['Título de licenciatura en área social', 'Promedio mínimo de 8.5', 'Proyecto de investigación', 'Entrevista'],
-    places: 25,
-    status: 'vigente',
-    doc: '#' 
-  },
-  { 
-    id: 4, 
-    title: 'Becas de Movilidad Internacional', 
-    deadline: '2025-03-01', 
-    type: 'Becas', 
-    summary: 'Estancias cortas (3-6 meses) en universidades y organizaciones aliadas en Latinoamérica.',
-    requirements: ['Estar inscrito en licenciatura', 'Promedio mínimo de 8.5', 'Nivel B2 de inglés o portugués', 'Carta de aceptación'],
-    places: 8,
-    status: 'vigente',
-    doc: '#' 
-  },
-  { 
     id: 5, 
     title: 'Prácticas Profesionales 2025-B', 
     deadline: '2025-05-10', 
@@ -59,28 +26,6 @@ const calls = [
     requirements: ['Haber cursado mínimo 6 semestres', 'No tener adeudos administrativos', 'Seguro médico vigente'],
     places: 60,
     status: 'próximamente',
-    doc: '#' 
-  },
-  { 
-    id: 6, 
-    title: 'Becas de Apoyo Económico', 
-    deadline: '2025-02-28', 
-    type: 'Becas', 
-    summary: 'Apoyo económico mensual para estudiantes en situación de vulnerabilidad socioeconómica.',
-    requirements: ['Estudio socioeconómico', 'Comprobante de ingresos', 'Carta compromiso de desempeño académico'],
-    places: 35,
-    status: 'vigente',
-    doc: '#' 
-  },
-  { 
-    id: 7, 
-    title: 'Diplomado en Políticas Públicas', 
-    deadline: '2025-03-15', 
-    type: 'Posgrado', 
-    summary: 'Programa de actualización profesional para egresados y profesionales del sector público.',
-    requirements: ['Título o cédula profesional', 'Experiencia laboral mínima de 2 años', 'Entrevista'],
-    places: 30,
-    status: 'vigente',
     doc: '#' 
   },
   { 
@@ -99,7 +44,7 @@ const calls = [
 export default function Convocatorias() {
   const [active, setActive] = useState('Todas');
   const [selectedCall, setSelectedCall] = useState(null);
-  const types = ['Todas', 'Licenciatura', 'Posgrado', 'Becas'];
+  const types = ['Todas', 'Licenciatura'];
   const filtered = useMemo(() => active === 'Todas' ? calls : calls.filter(c => c.type === active), [active]);
 
   useEffect(() => {
@@ -113,7 +58,7 @@ export default function Convocatorias() {
     <div className="convocatorias">
       <HeroSection
         title="Convocatorias"
-        description="Descubre las oportunidades vigentes para estudiantes, egresados y aspirantes. Becas, programas académicos y opciones de desarrollo profesional."
+        description="Descubre las oportunidades vigentes para estudiantes, egresados y aspirantes a la Licenciatura en Trabajo Social."
         ctaLabel="Explorar convocatorias"
         image="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop"
       />
@@ -237,10 +182,6 @@ export default function Convocatorias() {
           <details className="faq-item">
             <summary>¿Cómo sé si fui seleccionado?</summary>
             <p>Los resultados se publican en la página web y en las vitrinas de Control Escolar. También recibirás una notificación al correo registrado.</p>
-          </details>
-          <details className="faq-item">
-            <summary>¿Las becas son renovables?</summary>
-            <p>Sí, las becas académicas y de apoyo económico son renovables cada semestre, siempre que mantengas el promedio requerido y cumplas con los lineamientos.</p>
           </details>
         </div>
       </section>

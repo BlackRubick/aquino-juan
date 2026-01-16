@@ -24,23 +24,7 @@ const documentos = [
   'Comprobante de pago de examen'
 ];
 
-const costos = {
-  licenciatura: [
-    { concepto: 'Examen de admisión', costo: '$500' },
-    { concepto: 'Inscripción', costo: '$2,500' },
-    { concepto: 'Colegiatura mensual', costo: '$1,800' },
-    { concepto: 'Seguro estudiantil', costo: '$300' }
-  ],
-  posgrado: [
-    { concepto: 'Examen de admisión', costo: '$800' },
-    { concepto: 'Inscripción', costo: '$4,000' },
-    { concepto: 'Colegiatura mensual', costo: '$3,200' },
-    { concepto: 'Seguro estudiantil', costo: '$500' }
-  ]
-};
-
 export default function Admisiones() {
-  const [selectedProgram, setSelectedProgram] = useState('licenciatura');
 
   useEffect(() => {
     const els = document.querySelectorAll('.reveal');
@@ -63,7 +47,6 @@ export default function Admisiones() {
       <div className="admisiones__tabs reveal">
         <a href="#proceso" className="admisiones__tab">Proceso</a>
         <a href="#documentos" className="admisiones__tab">Documentos</a>
-        <a href="#costos" className="admisiones__tab">Costos</a>
         <a href="#convocatorias" className="admisiones__tab">Convocatorias</a>
       </div>
 
@@ -98,49 +81,7 @@ export default function Admisiones() {
             <div className="note-icon">ℹ️</div>
             <h4>Nota importante</h4>
             <p>Todos los documentos deben ser entregados en la Oficina de Control Escolar de lunes a viernes de 9:00 AM a 2:00 PM.</p>
-            <p>Para posgrado, se requieren documentos adicionales como título y cédula profesional.</p>
           </div>
-        </div>
-      </section>
-
-      {/* Costos */}
-      <section id="costos" className="admisiones__section reveal">
-        <Heading level={2}>Costos y Colegiaturas</Heading>
-        <div className="costos-tabs">
-          <button 
-            className={`costos-tab ${selectedProgram === 'licenciatura' ? 'active' : ''}`}
-            onClick={() => setSelectedProgram('licenciatura')}
-          >
-            Licenciatura
-          </button>
-          <button 
-            className={`costos-tab ${selectedProgram === 'posgrado' ? 'active' : ''}`}
-            onClick={() => setSelectedProgram('posgrado')}
-          >
-            Posgrado
-          </button>
-        </div>
-        <div className="costos-table">
-          <table>
-            <thead>
-              <tr>
-                <th>Concepto</th>
-                <th>Costo</th>
-              </tr>
-            </thead>
-            <tbody>
-              {costos[selectedProgram].map((item, i) => (
-                <tr key={i}>
-                  <td>{item.concepto}</td>
-                  <td className="costo-amount">{item.costo}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div className="costos-info">
-          <p><strong>Becas disponibles:</strong> Ofrecemos becas académicas y socioeconómicas del 25% al 100%</p>
-          <p><strong>Formas de pago:</strong> Efectivo, transferencia bancaria, tarjeta de crédito (hasta 6 meses sin intereses)</p>
         </div>
       </section>
 
@@ -153,13 +94,6 @@ export default function Admisiones() {
             <h3>Nuevo Ingreso Licenciatura 2025-B</h3>
             <p className="convocatoria-date">Fecha límite: 15 de Junio, 2025</p>
             <p>80 lugares disponibles para la Licenciatura en Trabajo Social</p>
-            <Link to="/convocatorias"><Button variant="primary">Ver convocatoria</Button></Link>
-          </article>
-          <article className="convocatoria-card">
-            <div className="convocatoria-badge vigente">Vigente</div>
-            <h3>Admisión Posgrado 2025</h3>
-            <p className="convocatoria-date">Fecha límite: 30 de Abril, 2025</p>
-            <p>25 lugares para Maestría en Intervención Social</p>
             <Link to="/convocatorias"><Button variant="primary">Ver convocatoria</Button></Link>
           </article>
         </div>

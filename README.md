@@ -9,8 +9,8 @@ El sitio web cuenta con una **arquitectura moderna y profesional** con 8 seccion
 ### 🏠 Navegación Principal
 - **Inicio**: Página de bienvenida con video tour institucional
 - **Nosotros**: Historia, misión, visión y directorio (fusiona Quienes Somos + Nuestra Historia)
-- **Programas**: Oferta académica (Licenciatura, Posgrado, Educación Continua)
-- **Admisiones**: Proceso de admisión, requisitos, costos y convocatorias
+- **Programas**: Oferta académica (Licenciatura en Trabajo Social)
+- **Admisiones**: Proceso de admisión, requisitos y convocatorias
 - **Investigación**: Líneas de investigación, proyectos y publicaciones
 - **Docentes**: Galería de profesores
 - **Vida Universitaria**: Eventos, servicios, clubes y testimonios

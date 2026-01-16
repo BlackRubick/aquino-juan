@@ -26,3 +26,7 @@ button {
   background: none;
   cursor: pointer;
 }
+/* Justificar párrafos de texto */
+p {
+  text-align: justify;
+}

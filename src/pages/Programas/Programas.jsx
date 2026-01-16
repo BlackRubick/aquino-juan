@@ -32,57 +32,6 @@ const programas = [
       'Empresas con programas de responsabilidad social',
       'Consultoría independiente'
     ]
-  },
-  {
-    id: 'posgrado',
-    title: 'Maestría en Intervención Social',
-    duration: '4 semestres',
-    modality: 'Presencial / Mixta',
-    description: 'Investigación aplicada para resolver problemáticas sociales complejas con enfoque multidisciplinario.',
-    objectives: [
-      'Formar investigadores en ciencias sociales',
-      'Desarrollar proyectos de intervención innovadores',
-      'Generar conocimiento aplicable a políticas públicas',
-      'Fortalecer redes de colaboración académica'
-    ],
-    perfil: [
-      'Dominio de metodologías de investigación',
-      'Capacidad de análisis de políticas públicas',
-      'Liderazgo en equipos multidisciplinarios',
-      'Pensamiento crítico y propositivo'
-    ],
-    campo: [
-      'Investigación académica',
-      'Diseño de políticas públicas',
-      'Asesoría a organizaciones internacionales',
-      'Docencia universitaria',
-      'Dirección de proyectos de desarrollo'
-    ]
-  },
-  {
-    id: 'educacion-continua',
-    title: 'Educación Continua',
-    duration: 'Variable',
-    modality: 'Presencial / Virtual',
-    description: 'Cursos, diplomados y talleres para actualización profesional y desarrollo de competencias específicas.',
-    objectives: [
-      'Actualizar conocimientos profesionales',
-      'Desarrollar habilidades especializadas',
-      'Certificar competencias laborales',
-      'Fomentar el aprendizaje permanente'
-    ],
-    perfil: [
-      'Profesionales del trabajo social',
-      'Personal de organizaciones civiles',
-      'Servidores públicos del área social',
-      'Estudiantes en formación'
-    ],
-    campo: [
-      'Actualización profesional continua',
-      'Certificación de competencias',
-      'Desarrollo de proyectos específicos',
-      'Networking profesional'
-    ]
   }
 ];
 
@@ -107,8 +56,6 @@ export default function Programas() {
       {/* Tabs de navegación */}
       <div className="programas__tabs reveal">
         <a href="#licenciatura" className="programas__tab">Licenciatura</a>
-        <a href="#posgrado" className="programas__tab">Posgrado</a>
-        <a href="#educacion-continua" className="programas__tab">Educación Continua</a>
       </div>
 
       {/* Programas */}

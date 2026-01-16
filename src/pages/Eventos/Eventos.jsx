@@ -10,7 +10,6 @@ import semillasImg from '../../assets/images/semillas.JPG';
 import './Eventos.css';
 
 const eventsData = [
-  // DESTACADOS
   { 
     id: 1, 
     title: 'Congreso Internacional de Trabajo Social', 

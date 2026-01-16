@@ -140,7 +140,7 @@ export default function QuienesSomos() {
             <div className="team-member__info">
               <h3>Mtra. Patricia Ramírez Ortiz</h3>
               <p className="team-member__role">Subdirectora Académica</p>
-              <p className="team-member__bio">Maestra en Desarrollo Comunitario, coordinadora de programas de licenciatura y posgrado.</p>
+              <p className="team-member__bio">Maestra en Desarrollo Comunitario, coordinadora de programas de licenciatura.</p>
             </div>
           </article>
           <article className="team-member">
